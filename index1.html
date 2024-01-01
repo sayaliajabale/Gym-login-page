@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayali fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Mulish&family=Poppins:wght@200&family=Roboto:wght@300&family=Sono:wght@500&display=swap"
+    rel="stylesheet">
+<style>
+    /* CSS Reset  */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('imag/fg.jpg') no-repeat center center/cover;
+        color: aliceblue;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Mulish', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Sono', sans-serif;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 95px;
+        filter: invert(100%);
+        /* invert function is used to convert black img into white and vice versa */
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 10px;
+        line-height: 19px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 38%;
+        margin: 20px auto;
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        color: white;
+        font-size: 17px;
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        /* anchor tag chi line cutt karay sathi use hote*/
+        padding: 10px 5px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        margin: opx 9px;
+        color: aliceblue;
+        background-color: black;
+        padding: 4px 3px;
+        border-radius: 10px;
+        font-size: 11px;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Lato', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sono', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: grey;
+        color: black;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 5px;
+        border: 2px solid white;
+        margin: 3px auto;
+        font-size: 13px;
+        font-family: 'Lato', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sono', sans-serif;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 100%;
+        margin: 12px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="imag/ab.jpg" alt="">
+            <div>Sayali fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for button  -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym of Delhi now</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+                <input type="text" name="" placeholder="Enter your Age">
+                <input type="text" name="" placeholder="Enter your Gender">
+                <input type="text" name="" placeholder="Enter your Locality">
+                <input type="text" name="" placeholder="Enter your Email id">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
